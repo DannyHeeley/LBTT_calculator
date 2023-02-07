@@ -1,0 +1,54 @@
+main {
+  border-radius: 25px;
+  background-color: Thistle;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: auto;
+  margin: auto;
+  border: 6px outset DarkSlateBlue;
+  padding: 3%;
+  max-width: 430px;
+}
+
+h1 {
+  margin-top: -2%
+}
+
+.question {
+  font-family: "Arial Black", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.inputs {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  float: inline-block;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.results {
+  text-align: left;
+}
+
+.list {
+  text-align: right;
+}
+
+.footer {
+  font-weight: 100;
+  opacity: 0.5;
+  color:Black;
+  font-size:14px;
+}
+
+hr {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+span.fa.fa-info-circle {
+  margin-top: -8.5%;
+  color: Indigo;
+  float: right;

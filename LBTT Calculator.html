@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LBTT Calculator</title>
+    <meta name="description" content="Land and Buildings Transaction Tax Calculator">
+    <meta name="author" content="Daniel Heeley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1 id="title" style="color:Indigo">LBTT CALCULATOR</h1>
+      <em><p id="description">Land and Buildings Transaction Tax Calculator</p></em>
+      <hr>
+      <form id="myForm">
+        <div class="save_results">
+
+          <div>
+            <label class="question" for="ads">Is this purchase eligible for Additional Dwelling Supplement?</label></br>
+              <div class="input">
+                <input type="radio" name="ads" id="ads" value="true"> Yes
+                <input type="radio" name="ads" id="ads" value="false"> No
+              </div>
+            </br>
+          </div>
+
+          <div>
+            <div class="input">
+              <label class="question" for="linked_transaction">Linked Transaction</label></br>
+              <input type="radio" name="linked_transaction" id="linked" value="true"> Yes
+              <input type="radio" name="linked_transaction" id="linked" value="false"> No
+            </div>
+          </br>
+          </div>
+
+          <div>
+            <div class="input">
+              <label class="question" for="buyer_relief">First-Time Buyer relief</label></br>
+              <input type="radio" name="buyer_relief" id="buyer_relief" value="true"> Yes
+              <input type="radio" name="buyer_relief" id="buyer_relief" value="false"> No
+            </div>
+          </div>
+          <div></br>
+            <label id="number-label" class="question" for="purchase_price">Price of property (£):</label></br>
+            <input placeholder="Enter the purchase price" type="number" id="number" name="purchase_price" min="0" max="999999999999999999" required>
+          </div>
+          <div id="submit_button">
+            <br>
+            <button class="click_submit" type="submit" id="click_submit" name="click_submit" style="font-size:18px; object-align:left"/>Calculate</button>
+          </div>
+        </div>
+        <div class="results">
+          <br>
+          <div>
+            <div>
+              <li>
+                <label>Tax:</label>
+              </li>
+            </div>
+
+            <div class="list">
+                <label><output name="result" id="total_tax" for="purchase_price" form="myForm"></output></label><br>
+            </div>
+          </div>
+
+          <div>
+            <li>
+              <label>Total Tax Percentage:</label>
+            </li>
+          </div>
+
+          <div class="list">
+            <label><output name="result" id="total_percentage" for="" form="myForm"></output></label></br>
+          </div>
+
+        </div>
+      </form>
+      <hr>
+      <div class="footer">
+        <em><label>This calculator provides the LBTT liability on a single property transaction based on the rates and bands correct at the time of writing this program.</label><br><br>
+        <em><label>For non-residential or mixed property transactions, please include VAT chargeable where appropriate.</label></em><br>
+      </div>
+    </main>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
